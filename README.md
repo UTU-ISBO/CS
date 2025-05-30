@@ -1,12 +1,9 @@
-1. Plantilla en Formato Markdown para subir al repositorio del estudiante
-Guárdalo como README.md en el repositorio de cada estudiante:
 
-markdown
-Copy
-Edit
 # Evaluación Práctica - Diseño de Red Completa
 
-**Alumno:**  
+
+**Grupo:**  
+**Alumnos:**  
 **Curso:**  
 **Fecha:**  
 
