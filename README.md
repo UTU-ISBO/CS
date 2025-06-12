@@ -46,7 +46,7 @@ Adjuntar el archivo del diagrama (en formato `.drawio`, `.png` o `.svg`).
 
 - Rango DHCP: `192.168.X.X - X.X`
 - Gateway LAN: 
-- Equipamiento utilizado (switches, categoría de cable, racks):
+- Equipamiento utilizado (switches, ap, router, fw):
 
 ---
 
