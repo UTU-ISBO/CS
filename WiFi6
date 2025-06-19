@@ -1,0 +1,141 @@
+# 📡 Clase: Redes Wi-Fi Avanzadas (Wi-Fi 6/802.11ax)
+
+**Duración estimada:** 45 minutos  
+**Formato:** Presentación técnica y demostrativa  
+**Objetivo:** Comprender los fundamentos técnicos de redes Wi-Fi modernas, incluyendo tipos de antenas, seguridad, canales, SNR, configuración de VLANs y topologías.
+
+---
+
+## 1️⃣ Introducción a las Redes Wi-Fi
+
+Las redes Wi-Fi permiten la conexión inalámbrica de dispositivos a una red local (LAN). Operan sobre los estándares IEEE 802.11, donde **Wi-Fi 6 (802.11ax)** es la última evolución comercial masiva.
+
+---
+
+## 2️⃣ Tipos de Antenas Wi-Fi
+
+| Tipo de Antena  | Característica | Aplicación |
+|-----------------|----------------|------------|
+| **Omnidireccional** | Emite en todas las direcciones (360°) | Routers domésticos, oficinas pequeñas |
+| **Direccional (Yagi, Panel)** | Emite en una dirección específica | Enlaces punto a punto |
+| **Sectorial** | Cubre un sector de 60° a 120° | Redes empresariales exteriores |
+
+> 🛠️ *Elegir la antena adecuada mejora la cobertura, el rendimiento y reduce interferencias.*
+
+---
+
+## 3️⃣ Tecnología Wi-Fi 6 (802.11ax)
+
+**Principales mejoras sobre Wi-Fi 5 (ac):**
+
+- ✔️ OFDMA (Orthogonal Frequency Division Multiple Access): más dispositivos conectados simultáneamente.
+- ✔️ MU-MIMO mejorado: múltiples usuarios, múltiples antenas.
+- ✔️ TWT (Target Wake Time): mayor eficiencia energética.
+- ✔️ Soporte de bandas 2.4 GHz, 5 GHz y opcional 6 GHz (Wi-Fi 6E).
+
+| Característica        | Wi-Fi 5        | Wi-Fi 6 (ax)     |
+|------------------------|----------------|------------------|
+| Velocidad teórica      | Hasta 3.5 Gbps | Hasta 9.6 Gbps   |
+| MU-MIMO                | Downlink solo  | Uplink y downlink|
+| Eficiencia energética  | Menor          | Mayor con TWT    |
+| Ancho de canal         | 20/40/80 MHz   | Hasta 160 MHz    |
+
+---
+
+## 4️⃣ Canales, SNR y Ancho de Banda
+
+- **Canales Wi-Fi:** Espectro dividido en canales (2.4 GHz: 1–13, 5 GHz: 36–165).
+- **Ancho de canal:** 20, 40, 80, 160 MHz → más ancho = más velocidad pero más interferencia.
+- **SNR (Signal to Noise Ratio):**
+  - Relación entre señal y ruido (más alto es mejor).
+  - Recomendado: **>20 dB** para enlaces estables.
+  
+> 🔍 *El uso eficiente de canales y ancho de banda es clave para evitar solapamientos e interferencias.*
+
+---
+
+## 5️⃣ Seguridad en Redes Wi-Fi
+
+| Protocolo   | Estado        | Características                     |
+|-------------|---------------|-------------------------------------|
+| WEP         | Obsoleto ❌   | Muy vulnerable                      |
+| WPA         | Inseguro ❌   | Superado por WPA2/WPA3              |
+| **WPA2**    | Estándar ✅    | AES, clave robusta                  |
+| **WPA3**    | Recomendado 🔐| SAE, cifrado mejorado, forward secrecy |
+
+**Consejos de seguridad:**
+- Cambiar el SSID por uno personalizado.
+- Usar contraseñas largas y complejas.
+- Deshabilitar WPS.
+- Separar red de invitados.
+
+---
+
+## 6️⃣ VLANs en redes Wi-Fi
+
+- Las VLANs permiten **segmentar el tráfico** en distintas redes lógicas.
+- Común en Access Points empresariales (UniFi, TP-Link Omada, Aruba).
+- Ejemplos:
+  - VLAN 10 → Wi-Fi administrativa.
+  - VLAN 20 → Wi-Fi invitados.
+  - VLAN 30 → Cámaras IP.
+
+**Requiere:**
+- Switches administrables.
+- Access Points con soporte para VLAN tagging (802.1Q).
+- Controlador o firewall para aislamiento.
+
+---
+
+## 7️⃣ Modos de Operación de APs
+
+| Modo               | Descripción                                        | Aplicación                       |
+|--------------------|----------------------------------------------------|----------------------------------|
+| **Punto de Acceso**| Modo estándar para emitir señal Wi-Fi              | Oficinas, hogares                |
+| **Cliente**        | AP se comporta como cliente de otro AP             | Extensores de red                |
+| **Punto a Punto (PtP)** | Conecta dos ubicaciones vía Wi-Fi directa       | Enlaces entre edificios          |
+| **Punto a Multipunto (PtMP)** | Un AP central comunica con varios nodos     | Redes comunitarias, rurales      |
+| **Mesh**           | Nodos conectados entre sí sin cableado intermedio | Cobertura en gran área           |
+
+> 🧭 *Elegir el modo correcto mejora la eficiencia, cobertura y administración de la red.*
+
+---
+
+## 🛠️ Ejemplo de Configuración Wi-Fi 6
+
+- SSID: `empresa-corp`
+- Seguridad: WPA3-Personal
+- Frecuencia: 5 GHz
+- Canal: 40
+- Ancho: 80 MHz
+- VLAN: 10
+- IP estática en el AP: 192.168.10.2/24
+- Gateway: 192.168.10.1
+- DNS: 8.8.8.8
+
+---
+
+## 🧪 Actividad sugerida (si aplica)
+
+> **Tarea técnica** (opcional):  
+> Diagramar una red Wi-Fi empresarial con:
+> - VLAN para invitados y corporativa.
+> - AP con modo punto a multipunto.
+> - Antena direccional para PtP a sucursal.
+
+---
+
+## ✅ Conclusiones
+
+- Wi-Fi 6 mejora significativamente el rendimiento, eficiencia y seguridad.
+- Las antenas, canales, ancho de banda y modos de operación influyen directamente en el diseño.
+- La segmentación con VLANs es esencial en entornos profesionales.
+
+---
+
+## 📚 Recursos útiles
+
+- [https://www.wi-fi.org](https://www.wi-fi.org)
+- [https://draw.io](https://draw.io)
+- [Ubiquiti WiFi Design Guide](https://ui.com/download)
+
