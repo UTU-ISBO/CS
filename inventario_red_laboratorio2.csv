@@ -1,0 +1,6 @@
+Dispositivo,Marca / Modelo,U (rack),MAC Address,IP Asignada,Tipo de Puerto,VLAN,Uplink / Downlink,Observaciones
+Switch Principal,,,,,RJ45 / SFP / Combo,,Uplink,
+Patchera,,,,,RJ45,-,-,
+Servidor Proxmox,,,,,RJ45 / SFP,100,Downlink,
+Router UTU,,,,,RJ45 / WAN,-,Uplink externo,
+Access Point,,,,,RJ45,110/130,Downlink,
